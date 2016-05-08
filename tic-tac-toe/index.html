@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+    <body onload="startGame();">
+      <h2>TIC-TAC-TOE</h2>
+        <div id="messages"></div>
+
+          <table>
+            <tr>
+              <td class="square" onclick="nextMove(this)" id="s1"></td>
+              <td class="square" onclick="nextMove(this)" id="s2"></td>
+              <td class="square" onclick="nextMove(this)" id="s3"></td>
+            </tr>
+            <tr>
+              <td class="square" onclick="nextMove(this)" id="s4"></td>
+              <td class="square" onclick="nextMove(this)" id="s5"></td>
+              <td class="square" onclick="nextMove(this)" id="s6"></td>
+            </tr>
+            <tr>
+              <td class="square" onclick="nextMove(this)" id="s7"></td>
+              <td class="square" onclick="nextMove(this)" id="s8"></td>
+              <td class="square" onclick="nextMove(this)" id="s9"></td>
+              </tr>
+            </table>
+            <br>
+          <div class="anchor">
+            <button href="javascript:startGame();">Play Again</button>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  background: url(./school-1325091.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 50px;
+  color: blue;
+}
+
+div {
+  text-align: center;
+  font-size: 24px;
+  color: green;
+  padding-bottom: 50px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.square {
+  width: 125px;
+  height: 125px;
+  align: center;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  border-color: white;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 75px;
+
+}
+
+.anchor {
+  margin: auto;
+}
