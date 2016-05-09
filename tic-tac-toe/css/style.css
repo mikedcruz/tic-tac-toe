@@ -6,7 +6,7 @@ body {
 h2 {
   text-align: center;
   padding-top: 50px;
-  color: blue;
+  color: white;
 }
 
 div {
@@ -31,9 +31,8 @@ table {
   font-family: fantasy;
   font-weight: bold;
   font-size: 75px;
-
 }
 
-.anchor {
-  margin: auto;
+.button {
+   margin: 0 auto;
 }

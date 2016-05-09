@@ -1,9 +1,9 @@
 function startGame () {
   for (var i = 1; i <=9; i++) {
-  clearBoxes(i);
-}
+  clearSquares(i);
+  }
   document.turn="X";
-  if (Math.random <0.5) {
+  if (Math.random() <0.5) {
     document.turn = "O";
   }
   document.winner = null
@@ -16,7 +16,7 @@ function setMessage (msg) {
 
 function nextMove(square) {
   if (document.winner != null) {
-      setMessage(document.winner + " has already won the game.")
+      setMessage(document.winner + " has already won the game.");
   } else if (square.innerText == "") {
       square.innerText = document.turn;
       switchTurn();
@@ -29,7 +29,12 @@ function switchTurn() {
   if (checkWinner(document.turn)) {
       setMessage(document.turn + " wins!");
       document.winner = document.turn;
-  } else if (document.turn == "X") {
+  }
+    else if (checkforTie())
+  {
+    setMessage("It's a Tie! Click below to play again!");
+}
+    else if (document.turn == "X") {
       document.turn = "O";
       setMessage("It's " + document.turn + "'s turn.");
   } else {
@@ -61,9 +66,20 @@ function checkRow(a, b, c, move) {
 return result;
 }
 
+function checkforTie()
+{
+  for (var i=1; i <10; i++) {
+    if(getSquare(i) == "")
+  return false;
+  }
+return true;
+}
+
+
 function getSquare(number) {
   return document.getElementById("s" + number).innerText;
 }
- function clearBoxes(number) {
-   document.getElementById("s" + number).innerText = "";
- }
+
+function clearSquares(number) {
+  document.getElementById("s" + number).innerText = "";
+}
